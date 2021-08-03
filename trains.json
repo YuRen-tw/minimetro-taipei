@@ -1,0 +1,20 @@
+{
+	"id": "TaipeiMRT",
+	"capacity": 6,
+	"locomotives": [
+		{
+			"type": "Locomotive",
+			"speed": 400,
+			"acceleration": 250,
+			"deceleration": 300,
+			"capacity": 8
+		},
+		{
+			"type": "Tram",
+			"speed": 200,
+			"acceleration": 200,
+			"deceleration": 200,
+			"capacity": 6
+		}
+	]
+}

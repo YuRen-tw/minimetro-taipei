@@ -1,0 +1,24 @@
+{
+	"achievements": [
+		{
+			"id": "taipei-1", 
+			"type": "Score", 
+			"city": "taipei", 
+			"score": 800, 
+			"icon": "passenger", 
+			"difficultyPriority": 0,
+			"customDescription": "Score 800 points in Taipei.",
+			"restrictions": [],
+		},
+		{
+			"id": "taipei-2", 
+			"type": "Score", 
+			"city": "taipei", 
+			"score": 1500, 
+			"icon": "passenger", 
+			"difficultyPriority": 0,
+			"customDescription": "Score 1500 points with no more than five MRT lines.",
+			"restrictions": [{"max": 5, "type": "Line", "scope": "Global"}],
+		}
+	],
+}

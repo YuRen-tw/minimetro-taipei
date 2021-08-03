@@ -1,0 +1,752 @@
+{
+	"id": "taipei",
+	
+	"customName": "Taipei",
+	"customLocalName": "臺北",
+	"customLocalNameLocale": "zh_TW",
+	"customCountryName": "Taiwan",
+	"customDescription": "",
+	
+	"lineCount": 8,
+	"crossingStyle": "Tunnel",
+	"audioLoadoutId": "london",
+
+	"theme":"TaipeiMRT",
+
+	"obstacles": [
+		{
+			"note": "the Background",
+			"points": [
+				"### background -LV=4 ###"
+			],
+			"visual": true,
+			"inverted": true,
+			"decoration": true,
+			"inPreview": false,
+			"cornerRadius": -1.0
+		},
+		{
+			"points": [
+				"### dan-shuei-he -LV=4 ###"
+			],
+			"note": "DanShueiHe",
+			"visual": true,
+			"inverted": false,
+			"decoration": false,
+			"inPreview": true,
+			"cornerRadius": 0.5
+		},
+		{
+			"points": [
+				"### san-chong -LV=4 ###"
+			],
+			"note": "SanChong",
+			"visual": true,
+			"inverted": true,
+			"decoration": false,
+			"inPreview": true,
+			"cornerRadius": 1.0
+		},
+		{
+			"points": [
+				"### mountain-north -LV=4 ###"
+			],
+			"visual": true,
+			"inverted": true,
+			"decoration": true,
+			"inPreview": true,
+			"cornerRadius": 1.0,
+			"color": {
+				"day": [205, 225, 205],
+				"night": [55, 55, 55]
+			}
+		},
+		{
+			"points": [
+				"### mountain-south -LV=4 ###"
+			],
+			"visual": true,
+			"inverted": true,
+			"decoration": true,
+			"inPreview": true,
+			"cornerRadius": 1.0,
+			"color": {
+				"day": [205, 225, 205],
+				"night": [55, 55, 55]
+			}
+		},
+		{
+			"points": [
+				"### mountain-east -LV=4 ###"
+			],
+			"visual": true,
+			"inverted": true,
+			"decoration": true,
+			"inPreview": true,
+			"cornerRadius": 1.0,
+			"color": {
+				"day": [205, 225, 205],
+				"night": [55, 55, 55]
+			}
+		},
+		{
+			"points": [
+				"### mountain-west -LV=4 ###"
+			],
+			"visual": true,
+			"inverted": true,
+			"decoration": true,
+			"inPreview": true,
+			"cornerRadius": 1.0,
+			"color": {
+				"day": [205, 225, 205],
+				"night": [55, 55, 55]
+			}
+		}
+	],
+	
+	"origin": [0, 0],
+	"zoom": {
+		"start": 0.47,
+		"end": 0.27,
+		"delay": 1,
+		"duration": 30,
+		"earlyZoom": 0.5,
+		"lateZoom": 1.0
+	},
+	"startArea":{
+		"rightBottom": [0, 0.23],
+		"leftTop": [0, 0.23]
+	},
+
+	"cityAreas": [
+		{
+			"label": "City",
+			"paths": [
+				{
+					"note": "West",
+					"points": [
+						"### ca-city-west -LV=6 ###"
+					]
+				},
+				{
+					"note": "East",
+					"points": [
+						"### ca-city-east -LV=6 ###"
+					]
+				}
+			],
+			"density": 1.0,
+			"stationSpawns": [
+				{"type": "CIRCLE", "weight": 0.6, "maximum": -1, "activeDay": -1},
+				{"type": "SQUARE", "weight": 0.3, "maximum": -1, "activeDay": -1},
+				{"type": "SPECIAL", "weight": 1.0, "maximum": 2, "activeDay": -1}
+			]
+		},
+		{
+			"label": "PeopleA",
+			"paths": [
+				{
+					"note": "Taipei",
+					"points": [
+						"### ca-taipei -LV=6 ###"
+					]
+				},
+				{
+					"note": "YongHe",
+					"points": [
+						"### ca-yong-he -LV=6 ###"
+					]
+				},
+				{
+					"note": "XinDian",
+					"points": [
+						"### ca-xin-dian -LV=6 ###"
+					]
+				},
+				{
+					"note": "BanQiau",
+					"points": [
+						"### ca-ban-qiau -LV=6 ###"
+					]
+				}
+			],
+			"density": 1.2,
+			"stationSpawns": [
+				{"type": "CIRCLE", "weight": 0.5, "maximum": -1, "activeDay": 2},
+				{"type": "TRIANGLE", "weight": 0.7, "maximum": -1, "activeDay": 3},
+				{"type": "SQUARE", "weight": 0.3, "maximum": -1, "activeDay": 7}
+			]
+		},
+		{
+			"label": "PeopleB",
+			"paths": [
+				{
+					"note": "SanChong",
+					"points": [
+						"### ca-san-chong -LV=6 ###"
+					]
+				},
+				{
+					"note": "XingZhuang",
+					"points": [
+						"### ca-xing-zhuang -LV=6 ###"
+					]
+				},
+				{
+					"note": "TuCheng",
+					"points": [
+						"### ca-tu-cheng -LV=6 ###"
+					]
+				},
+				{
+					"note": "MuZha",
+					"points": [
+						"### ca-mu-zha -LV=6 ###"
+					]
+				},
+				{
+					"note": "NeiHu",
+					"points": [
+						"### ca-nei-hu -LV=6 ###"
+					]
+				},
+				{
+					"note": "BeiTou",
+					"points": [
+						"### ca-bei-tou -LV=6 ###"
+						[50, 320],
+						[-60, 310],
+						[0, 220]
+					]
+				},
+				{
+					"note": "DanShuei",
+					"points": [
+						"### ca-dan-shuei -LV=6 ###"
+					]
+				}
+			],
+			"density": 1.0,
+			"stationSpawns": [
+				{"type": "CIRCLE", "weight": 0.7, "maximum": -1, "activeDay": 14},
+				{"type": "TRIANGLE", "weight": 0.5, "maximum": -1, "activeDay": 14}
+			]
+		},
+		{
+			"label": "PeopleC",
+			"paths": [
+				{
+					"note": "ShiLin",
+					"points": [
+						"### ca-shi-lin -LV=6 ###"
+					]
+				},
+				{
+					"note": "LinKou",
+					"points": [
+						"### ca-lin-kou -LV=6 ###"
+					]
+				},
+				{
+					"note": "UGu",
+					"points": [
+						"### ca-u-gu -LV=6 ###"
+					]
+				},
+				{
+					"note": "ShuLin",
+					"points": [
+						"### ca-shu-lin -LV=6 ###"
+					]
+				},
+				{
+					"note": "NanGang",
+					"points": [
+						"### ca-nan-gang -LV=6 ###"
+					]
+				},
+				{
+					"note": "XiZhi",
+					"points": [
+						"### ca-xi-zhi -LV=6 ###"
+					]
+				}
+			],
+			"density": 0.6,
+			"stationSpawns": [
+				{"type": "CIRCLE", "weight": 0.7, "maximum": -1, "activeDay": 22},
+				{"type": "TRIANGLE", "weight": 0.5, "maximum": -1, "activeDay": 22}
+			]
+		},
+		{
+			"label": "PeopleD",
+			"paths": [
+				{
+					"note": "BaLi",
+					"points": [
+						"### ca-ba-li -LV=6 ###"
+					]
+				},
+				{
+					"note": "DanShueiSouth",
+					"points": [
+						"### ca-dan-shuei-south -LV=6 ###"
+					]
+				},
+				{
+					"note": "SanXia",
+					"points": [
+						"### ca-san-xia -LV=6 ###"
+					]
+				},
+				{
+					"note": "XinDianWest",
+					"points": [
+						"### ca-xin-dian-west -LV=6 ###"
+					]
+				},
+				{
+					"note": "XiZhiEast",
+					"points": [
+						"### ca-xi-zhi-east -LV=6 ###"
+					]
+				},
+				{
+					"note": "SheZhi",
+					"points": [
+						"### ca-she-zhi -LV=6 ###"
+					]
+				}
+			],
+			"density": 0.4,
+			"stationSpawns": [
+				{"type": "CIRCLE", "weight": 1.0, "maximum": -1, "activeDay": 35}
+			]
+		},
+		{
+			"label": "Airport",
+			"paths": [
+				{
+					"points": [
+						"### ca-airport -LV=6 ###"
+					]
+				}
+			],
+			"density": 0.5,
+			"stationSpawns": [
+				{"type": "CIRCLE", "weight": 0.3, "maximum": -1, "activeDay": 21},
+				{"type": "SPECIAL", "weight": 1.0, "maximum": 1, "activeDay": 14}
+			]
+		},
+		{
+			"label": "School",
+			"paths": [
+				{
+					"points": [
+						"### ca-school -LV=6 ###"
+					]
+				}
+			],
+			"density": 0.5,
+			"stationSpawns": [
+				{"type": "TRIANGLE", "weight": 0.3, "maximum": -1, "activeDay": 14},
+				{"type": "SPECIAL", "weight": 1.0, "maximum": 1, "activeDay": 7}
+			]
+		},
+		{
+			"label": "Zoo",
+			"paths": [
+				{
+					"points": [
+						"### ca-zoo -LV=6 ###"
+					]
+				}
+			],
+			"density": 0.5,
+			"stationSpawns": [
+				{"type": "SPECIAL", "weight": 1.0, "maximum": 1, "activeDay": 7}
+			]
+		},
+		{
+			"label": "Museum",
+			"paths": [
+				{
+					"points": [
+						"### ca-museum -LV=6 ###"
+					]
+				}
+			],
+			"density": 0.5,
+			"stationSpawns": [
+				{"type": "SPECIAL", "weight": 1.0, "maximum": 1, "activeDay": 21}
+			]
+		}
+	],
+	"stationSeparationScale": 1.0,
+
+	"stationSpawns": {
+		"cooldown": 0,
+		"schedule": [
+			{
+				"numDays": 6,
+				"randomness": 0.2,
+				"types": ["CIRCLE", "TRIANGLE", "CIRCLE", "SQUARE", "CIRCLE", "SPECIAL"]
+			},
+			{
+				"numDays": 6,
+				"randomness": 0.3,
+				"types": ["CIRCLE", "TRIANGLE", "TRIANGLE", "CIRCLE", "TRIANGLE", "SPECIAL"]
+			},
+			{
+				"numDays": 6,
+				"randomness": 0.7,
+				"types": ["CIRCLE", "CIRCLE", "CIRCLE", "SQUARE", "TRIANGLE", "SPECIAL"]
+			}
+		],
+		"special": ["PENTAGON", "DIAMOND", "STAR", "CROSS", "WEDGE", "EGG", "GEM"]
+	},
+	"passengerSpawnScale": 1.0,
+
+	"stationCapacity": 7,
+	"interchangeCapacity": 21,
+	"upgrades": {
+		"initial": [
+			"Line",
+			"Line",
+			"Line",
+			"Tram",
+			"Tram",
+			"Tram",
+			"Locomotive",
+			"Locomotive",
+			"Crossing",
+			"Crossing",
+			"Crossing",
+			"Crossing"
+		],
+		"numOptions": [3, 2],
+		"unlocks": [
+			[
+				{"type":"Locomotive", "max": 12, "count": 1, "weight": 1.0, "week": 0},
+				{"type":"Tram", "max": 36, "count": 3, "weight": 1.0, "week": 0},
+				{"type":"Crossing", "max": 0, "count": 2, "weight": 1.0, "week": 0}
+			],
+			[
+				{"type":"Line","max": 5,"count": 1,"weight": 1.0,"week": 0},
+				{"type":"Crossing","max": 0,"count": 3,"weight": 0.75,"week": 0},
+				{"type":"Carriage","max": 0,"count": 2,"weight": 0.75,"week": 0},
+				{"type":"Interchange","max": 0,"count": 1,"weight": 0.25,"week": 3}
+			]
+		]
+	},
+
+	"trainDefinition": "TaipeiMRT",
+
+	"stations": [
+		{
+			"tag":"TaipeiMain",
+			"type": "pentagon",
+			"position": "### line-r-0-5 -P=3 ###"
+		},
+		{
+			"tag":"XiMen",
+			"type": "triangle",
+			"position": "### line-bl-0-3 -P=1 ###"
+		},
+		{
+			"tag":"ZhongShan",
+			"type": "circle",
+			"position": "### line-r-0-5 -P=2 ###"
+		}
+	],
+	
+	"lines": [
+		{
+			"name": "Line-BR",
+			"maxTrains": 6,
+			"allowedTrains": ["Tram", "Carriage", "Crossing"]
+		},
+		{
+			"name": "Line-R",
+			"maxTrains": 6,
+			"allowedTrains": ["Tram", "Locomotive", "Carriage", "Crossing"]
+		},
+		{
+			"name": "Line-BL",
+			"maxTrains": 6,
+			"allowedTrains": ["Tram", "Locomotive", "Carriage", "Crossing"]
+		},
+		{
+			"name": "Line-G",
+			"maxTrains": 6,
+			"allowedTrains": ["Tram", "Locomotive", "Carriage", "Crossing"]
+		},
+		{
+			"name": "Line-O",
+			"maxTrains": 6,
+			"allowedTrains": ["Tram", "Locomotive", "Carriage", "Crossing"]
+		},
+		{
+			"name": "Line-Y",
+			"maxTrains": 6,
+			"allowedTrains": ["Tram", "Carriage", "Crossing"]
+		},
+		{
+			"name": "Line-LG",
+			"maxTrains": 6,
+			"allowedTrains": ["Tram", "Carriage", "Crossing"]
+		},
+		{
+			"name": "Line-SB",
+			"maxTrains": 6,
+			"allowedTrains": ["Tram", "Carriage", "Crossing"]
+		}
+	],
+
+	"transitions": [
+		{
+			"points": [
+				[10000, 10000],
+				[0, 0]
+			],
+			"id": "menu-game"
+		},
+		{
+			"points": [
+				[10000, 10000],
+				[0, 0]
+			],
+			"id": "menu-pause"
+		}
+	],
+
+	"preview": { 
+		"window": { 
+			"position": "### preview-window-p3 -P=3 -INT ###",
+			"size": 1300.0
+		},
+		"hidePermanentLines": true,
+
+        "stations": [
+			{
+				"tag":"TaipeiMain",
+				"type": "pentagon",
+				"position": "### line-r-0-5 -P=3 ###"
+			},
+			{
+				"tag":"BanQiau",
+				"type": "square",
+				"position": "### line-bl-0-3 -P=0 ###"
+			},
+			{
+				"tag":"XiMen",
+				"type": "triangle",
+				"position": "### line-bl-0-3 -P=1 ###"
+			},
+			{
+				"tag":"ZhongXiauXinShen",
+				"type": "circle",
+				"position": "### line-bl-0-3 -P=3 ###"
+			},
+			{
+				"tag":"ShiLin",
+				"type": "circle",
+				"position": "### line-r-0-5 -P=0 ###"
+			},
+			{
+				"tag":"MinQuanXi",
+				"type": "circle",
+				"position": "### line-r-0-5 -P=1 ###"
+			},
+			{
+				"tag":"ZhongShan",
+				"type": "circle",
+				"position": "### line-r-0-5 -P=2 ###"
+			},
+			{
+				"tag":"NanMen",
+				"type": "triangle",
+				"position": "### line-r-0-5 -P=4 ###"
+			},
+			{
+				"tag":"DongMen",
+				"type": "circle",
+				"position": "### line-r-0-5 -P=5 ###"
+			},
+			{
+				"tag":"SongJiangNanJing",
+				"type": "circle",
+				"position": "### line-g-0-4 -P=0 ###"
+			},
+			{
+				"tag":"GuTing",
+				"type": "circle",
+				"position": "### line-g-0-4 -P=4 ###"
+			},
+			{
+				"tag":"SanChong",
+				"type": "circle",
+				"position": "### line-o-0-6 -P=0 ###"
+			},
+			{
+				"tag":"YongHe",
+				"type": "circle",
+				"position": "### line-o-0-6 -P=6 ###"
+			}
+        ],
+
+		"lines": [
+			{
+				"index": 1,
+				"links": [
+					{
+						"station": "ShiLin",
+						"stops": [ { "direction": "SOUTHEAST", "platform": 0 } ]
+					},
+					{
+						"station": "MinQuanXi",
+						"stops": [
+							{ "direction": "NORTH", "platform": 0 },
+							{ "direction": "SOUTH", "platform": 0 }
+						]
+					},
+					{
+						"station": "ZhongShan",
+						"stops": [
+							{ "direction": "NORTH", "platform": 0 },
+							{ "direction": "SOUTH", "platform": 0 }
+						]
+					},
+					{
+						"station": "TaipeiMain",
+						"stops": [
+							{ "direction": "NORTH", "platform": 0 },
+							{ "direction": "SOUTH", "platform": 0 }
+						]
+					},
+					{
+						"station": "NanMen",
+						"stops": [
+							{ "direction": "NORTHWEST", "platform": 0 },
+							{ "direction": "EAST", "platform": 0 }
+						]
+					},
+					{
+						"station": "DongMen",
+						"stops": [ { "direction": "WEST", "platform": 0 } ]
+					}
+				]
+			},
+			{
+				"index": 2,
+				"links": [
+					{
+						"station": "BanQiau",
+						"stops": [ { "direction": "EAST", "platform": 0 } ]
+					},
+					{
+						"station": "XiMen",
+						"stops": [
+							{ "direction": "SOUTHWEST", "platform": 0 },
+							{ "direction": "NORTHEAST", "platform": 0 }
+						]
+					},
+					{
+						"station": "TaipeiMain",
+						"stops": [
+							{ "direction": "WEST", "platform": 0 },
+							{ "direction": "EAST", "platform": 0 }
+						]
+					},
+					{
+						"station": "ZhongXiauXinShen",
+						"stops": [ { "direction": "WEST", "platform": 0 } ]
+					}
+				]
+			},
+			{
+				"index": 3,
+				"links": [
+					{
+						"station": "SongJiangNanJing",
+						"stops": [ { "direction": "WEST", "platform": 0 } ]
+					},
+					{
+						"station": "ZhongShan",
+						"stops": [
+							{ "direction": "EAST", "platform": 0 },
+							{ "direction": "SOUTHWEST", "platform": 0 }
+						]
+					},
+					{
+						"station": "XiMen",
+						"stops": [
+							{ "direction": "NORTH", "platform": 0 },
+							{ "direction": "SOUTHEAST", "platform": 0 }
+						]
+					},
+					{
+						"station": "NanMen",
+						"stops": [
+							{ "direction": "WEST", "platform": 0 },
+							{ "direction": "SOUTHEAST", "platform": 0 }
+						]
+					},
+					{
+						"station": "GuTing",
+						"stops": [ { "direction": "NORTHWEST", "platform": 0 } ]
+					}
+				]
+			},
+			{
+				"index": 4,
+				"links": [
+					{
+						"station": "SanChong",
+						"stops": [ { "direction": "NORTHEAST", "platform": 0 } ]
+					},
+					{
+						"station": "MinQuanXi",
+						"stops": [
+							{ "direction": "WEST", "platform": 0 },
+							{ "direction": "EAST", "platform": 0 }
+						]
+					},
+					{
+						"station": "SongJiangNanJing",
+						"stops": [
+							{ "direction": "NORTHWEST", "platform": 0 },
+							{ "direction": "SOUTH", "platform": 0 }
+						]
+					},
+					{
+						"station": "ZhongXiauXinShen",
+						"stops": [
+							{ "direction": "NORTH", "platform": 0 },
+							{ "direction": "SOUTH", "platform": 0 }
+						]
+					},
+					{
+						"station": "DongMen",
+						"stops": [
+							{ "direction": "NORTH", "platform": 0 },
+							{ "direction": "SOUTHWEST", "platform": 0 }
+						]
+					},
+					{
+						"station": "GuTing",
+						"stops": [
+							{ "direction": "NORTHEAST", "platform": 0 },
+							{ "direction": "SOUTHWEST", "platform": 0 }
+						]
+					},
+					{
+						"station": "YongHe",
+						"stops": [ { "direction": "NORTH", "platform": 0 } ]
+					}
+				]
+			}
+        ]
+	}
+}

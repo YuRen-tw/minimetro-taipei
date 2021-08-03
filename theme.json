@@ -1,0 +1,44 @@
+{
+	"name": "TaipeiMRT", 
+	"backgroundColor": {
+		"day": [255, 255, 255],
+		"night": [53, 49, 54]
+	},
+	"peepColor": {
+		"day": [68, 51, 51], 
+		"night": [242, 242, 242]
+	},
+	"waterColor": {
+		"internal": {
+			"day": [218, 227, 236],
+			"night": [218, 227, 236]
+		},
+		"outline": {
+			"day": [218, 227, 236],
+			"night": [218, 227, 236],
+		},
+		"outlineWidth": 0.5,
+		"previewOutlineWidth": -1.0
+	},
+	"stationColor": {
+		"internal": {
+			"day": [255, 255, 255],
+			"night": [53, 49, 54]
+		},
+		"outline": {
+			"day": [0, 0, 0], 
+			"night": [242, 242, 242]
+		},
+		"outlineWidth": 2.0
+	},
+	"lineColors": [
+		{"day": [196, 140, 49], "note": "BR"},
+		{"day": [227, 0, 44], "note": "R"},
+		{"day": [0, 112, 189], "note": "BL"},
+		{"day": [0, 134, 89], "note": "G"},
+		{"day": [248, 182, 28], "note": "O"},
+		{"day": [255, 219, 0], "note": "Y"},
+		{"day": [161, 216, 132], "note": "LG"},
+		{"day": [37, 170, 225], "note": "SB"},
+	]
+}
